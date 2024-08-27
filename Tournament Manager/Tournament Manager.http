@@ -1,0 +1,6 @@
+@Tournament_Manager_HostAddress = http://localhost:5263
+
+GET {{Tournament_Manager_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
