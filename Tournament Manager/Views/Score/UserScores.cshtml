@@ -1,0 +1,21 @@
+@model List<Score>
+
+    <h2>Your Scores</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Score</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var score in Model)
+        {
+            <tr>
+                <td>@score.Value</td>
+                <td>@score.DateRecorded</td>
+            </tr>
+        }
+        </tbody>
+    </table>

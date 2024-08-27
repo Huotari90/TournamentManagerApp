@@ -1,0 +1,23 @@
+@model List<Score>
+
+    <h2>Leaderboard</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+        {
+            <tr>
+                <td>@(i + 1)</td>
+                <td>@Model[i].User.UserName</td>
+                <td>@Model[i].Value</td>
+            </tr>
+        }
+        </tbody>
+    </table>
